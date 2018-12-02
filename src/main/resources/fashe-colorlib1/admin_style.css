@@ -1,0 +1,74 @@
+.category{
+	margin-top: 60px;
+}
+.category p, .sub_category p, .service p, .sub_service p, .goods p, .user_list p{
+	padding: 20px;
+	color: rgb(26, 28, 30);
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    text-align: center;
+}
+.input_id{
+	width: 100px;
+	margin-left: 20px;
+}
+.input_price{
+	width: 80px;
+}
+.goods span{
+	padding-left: 20px;
+}
+.goods select{
+	margin-top: 15px;
+}
+.goods button{
+	margin: 20px 0px 0px 20px;
+}
+
+table{
+	border: 1px #ccc;
+	width: 600px;
+	margin-left: 20px;
+	margin-bottom: 90px;
+}
+tr, td, th{
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.bgwhite {
+    padding: 0;
+    background: linear-gradient(to top, #66ffff 28%, #ffffff 100%);
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+input{
+    width: 100px;
+    padding: 3px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #eff5f5;
+    border-radius: 10%;
+}
+
+#filedFile{
+    width: 270px;
+}
+button{
+    width: 100px;
+    padding: 3px 5px;
+    margin: 5px 0;
+    background-color: aquamarine;
+    font-size: 13px;
+}
+button:hover{
+    border: 1px solid green;
+    background-color: lightgreen;
+    text-decoration: overline;
+}

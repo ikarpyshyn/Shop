@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="animsition">
+    <!-- Header -->
+    <!-- Title Page -->
+    <section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.png);">
+        <h2 class="l-text2 t-center">
+			AdminPage
+		</h2> </section>
+    <!-- Content page -->
+    <section class="bgwhite p-t-55 p-b-65">
+
+        <main>
+            <div class="general_row">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--
+                <div class="top_header">
+                   <div class="inner_header">
+                        <div class="icon_tel">
+                           <img src="img/icon_telephone.png" alt="">
+                        </div>
+
+                        <div class="icon_twitter">
+                          <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icon_twitter.png" alt=""></a>
+                        </div>
+                         <div class="login_text">
+                          <button id="login_" type="button" href="login.html">Login |</button>
+                        </div>
+                         <div class="login_text registration">
+                          <button id="registr_button" type="button" href=""registr.html"">Registration</button>
+                        </div>
+                        <div class="clear"></div>
+                  </div>
+                </div>
+--></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="category">
+                            <p>Category</p>
+                            <input id="idCategory" type="text" placeholder="idCategory" class="input_id">
+                            <input id="nameCategory" type="text" placeholder="nameCategory">
+                            <button id="addCategory" type="submit" value="submit">ADD</button>
+                            <button id="deleteCategory" type="button" value="delete">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sub_category">
+                            <p>SubCategory</p>
+                            <input id="idSubCategory" type="text" placeholder="idSubCategory" class="input_id">
+                            <input id="nameSubCategory" type="text" placeholder="nameSubCategory">
+                            <input id="idCategoryForSubCategory" type="text" placeholder="idCategory" class="input_id">
+                            <button id="addSubCategory" type="submit" value="submit">ADD</button>
+                            <button id="deleteSubCategory" type="button" value="delete">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="service">
+                            <p>Servises</p>
+                            <input id="idServises" type="text" placeholder="idServises" class="input_id">
+                            <input id="nameServises" type="text" placeholder="nameServises ">
+                            <button id="addServises" type="submit" value="submit">ADD</button>
+                            <button id="deleteServises" type="button" value="delete">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sub_service">
+                            <p>Subservices</p>
+                            <input type="text" placeholder="id" class="input_id">
+                            <input id="nameSubServises" type="text" placeholder="nameSubServises">
+                            <input id="idServisesForSubServises" type="text" placeholder="idSubServises">
+                            <button id="addSubServises" type="submit" value="submit">ADD</button>
+                            <button type="button" value="delete">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="goods">
+                            <p>Goods</p>
+                            <input id="idGoods" type="text" placeholder="id" class="input_id">
+                            <input id="nameGoods" type="text" placeholder="Goods name">
+                            <input id="idSubCategoryForGoods" type="text" placeholder="idSubCategory" class="input_id">
+                            <input id="idCategoryForGoods" type="text" placeholder="idCategory" class="input_id">
+                            <input id="price" type="text" placeholder="Price" class="input_price">
+                            <br>
+                            <br> <span>Select category</span>
+                            <select>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <br> <span>Select subcategory</span>
+                            <select>
+                                <option value=""></option>
+                            </select>
+                            <br>
+                            <input type="file" id="filedFile">
+                            <button id="addGoods" onclick="getFile(document.getElementById('filedFile'))">ADD</button>
+                            <button id="deleteGoods" type="button" value="delete">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Category-->
+            <script>
+                $("#addCategory").click(function () {
+                    var category = {
+                        nameCategory: $("#nameCategory").val()
+                    };
+                    $.ajax({
+                        url: "http://localhost:8080/category"
+                        , type: "POST"
+                        , headers: {
+                            "Authorize": "Bearer " + localStorage.getItem("token")
+                        }
+                        , contentType: "application/json"
+                        , data: JSON.stringify(category)
+                        , success: function (data) {
+                            $("#categoryInShop").append("<li>" + data.nameCategory + "</li>");
+                            alert("Good");
+                        }
+                        , error: function (error) {
+                            console.log(error);
+                        }
+                    });
+                });
+            </script>
+            <!--SubCategory-->
+            <script>
+                $("#addSubCategory").click(function () {
+                    var subCategory = {
+                        nameSubCategory: $("#nameSubCategory").val()
+                        , idCategory: $("#idCategoryForSubCategory").val()
+                    };
+                    $.ajax({
+                        url: "http://localhost:8080/subCategory"
+                        , type: "POST"
+                        , headers: {
+                            "Authorize": "Bearer " + localStorage.getItem("token")
+                        }
+                        , contentType: "application/json"
+                        , data: JSON.stringify(subCategory)
+                        , success: function (data) {
+                            $("#content").append("<h3>" + data.id + " " + data.nameSubCategory + "</h3>")
+                            alert("Good");
+                        }
+                        , error: function (error) {
+                            console.log(error);
+                        }
+                    });
+                });
+            </script>
+            <!--Servises-->
+            <script>
+                $("#addServises").click(function () {
+                    var servises = {
+                        nameServises: $("#nameServises").val()
+                    };
+                    $.ajax({
+                        url: "http://localhost:8080/servises"
+                        , type: "POST"
+                        , headers: {
+                            "Authorize": "Bearer " + localStorage.getItem("token")
+                        }
+                        , contentType: "application/json"
+                        , data: JSON.stringify(servises)
+                        , success: function (data) {
+                            alert("Good");
+                        }
+                        , error: function (error) {
+                            console.log(error);
+                        }
+                    });
+                });
+                <!--SubServises-->
+                $("#addSubServises").click(function () {
+                    var subServises = {
+                        nameSubServises: $("#nameSubServises").val()
+                        , idServises: $("#idServisesForSubServises").val()
+                    };
+                    $.ajax({
+                        url: "http://localhost:8080/subServises"
+                        , type: "POST"
+                        , headers: {
+                            "Authorize": "Bearer " + localStorage.getItem("token")
+                        }
+                        , contentType: "application/json"
+                        , data: JSON.stringify(subServises)
+                        , success: function (data) {
+                            alert("Good");
+                        }
+                        , error: function (error) {
+                            console.log(error);
+                        }
+                    });
+                });
+            </script>
+            <!--Goods-->
+            <script>
+                function getFile(object) {
+                    var file = object.files[0];
+                    var reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = function () {
+                        console.log("uploading...");
+                        var readFile = reader.result;
+                        var goods = {
+                            nameGoods: $("#nameGoods").val()
+                            , idCategory: $("#idCategoryForGoods").val()
+                            , idSubCategory: $("#idSubCategoryForGoods").val()
+                            , img: readFile
+                            , price: $("#price").val()
+                        }
+                        $.ajax({
+                            'url': "http://localhost:8080/goods"
+                            , 'type': "POST"
+                            , headers: {
+                                "Authorize": "Bearer " + localStorage.getItem("token")
+                            }
+                            , 'contentType': "application/json"
+                            , "dataType": "json"
+                            , 'data': JSON.stringify(goods)
+                            , 'success': function (data) {
+                                alert("Good");
+                            }
+                            , 'error': function (error) {
+                                alert("ERROR");
+                            }
+                        });
+                    }
+                }
+            </script>
+            <!--ListUser-->
+            <script>
+                $.ajax({
+                    url: "http://localhost:8080/user"
+                    , type: "GET"
+                    , contentType: "application/json"
+                    , success: function (data) {
+                        for (var i = 0; i < data.length; i++) {
+                            $("#listUseriv").append("<li>" + data[i].id + "  " + data[i].name + "</li>");
+                        }
+                    }
+                    , error: function (error) {
+                        console.log(error);
+                    }
+                });
+            </script>
+        </main>
+    </section>
+    <!-- Footer -->
+    <!-- Back to top -->
+    <div class="btn-back-to-top bg0-hov" id="myBtn"> <span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span> </div>
+    <!-- Container Selection -->
+    <div id="dropDownSelect1"></div>
+    <div id="dropDownSelect2"></div>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+    <script type="text/javascript">
+        $(".selection-1").select2({
+            minimumResultsForSearch: 20
+            , dropdownParent: $('#dropDownSelect1')
+        });
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20
+            , dropdownParent: $('#dropDownSelect2')
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick-custom.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        $('.block2-btn-addcart').each(function () {
+            var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to cart !", "success");
+            });
+        });
+        $('.block2-btn-addwishlist').each(function () {
+            var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to wishlist !", "success");
+            });
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/noui/nouislider.min.js"></script>
+    <script type="text/javascript">
+        /*[ No ui ]
+        	    ===========================================================*/
+        var filterBar = document.getElementById('filter-bar');
+        noUiSlider.create(filterBar, {
+            start: [50, 200]
+            , connect: true
+            , range: {
+                'min': 50
+                , 'max': 200
+            }
+        });
+        var skipValues = [
+	    document.getElementById('value-lower')
+	    , document.getElementById('value-upper')
+	    ];
+        filterBar.noUiSlider.on('update', function (values, handle) {
+            skipValues[handle].innerHTML = Math.round(values[handle]);
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

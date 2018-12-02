@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1><p>Admin page</p></h1>
+          <div id="users">
+  <input class="search" placeholder="Search" />
+  <button id="button2" class="sort" data-sort="name">
+    Find All
+  </button>
+  <button id="button3" class="sort" data-sort="name">
+    Find by name
+  </button>
+  <table>
+    <!-- IMPORTANT, class="list" have to be at tbody -->
+    <ul class="list2" id="list">
+      
+    </ul>
+  </table>
+
+</div>
+</div>
+<script>
+    
+     $("#button2").click(function(){
+    
+    $.ajax({
+      url:"http://localhost:8080/order",
+      type:"GET",
+      headers: {
+            "Authorize":"Bearer " + localStorage.getItem("token")
+        },
+      contentType:"application/json",
+      success:function(data){
+        for (var i = 0; i < data.length; i++) {
+          $("#list").append("<li>"+data[i].id+" "+data[i].userName+"</li>");
+        }
+          alert("+");
+      },
+      error:function(error){
+        console.log(error);
+      }
+    });
+     });    
+         
+    
+    $("#button3").click(function(){
+    
+    var n = {
+        n:$(".search").val()
+    };
+           
+         
+    $.ajax({ 
+      url:"http://localhost:8080/user/3",
+      type:"GET",
+      contentType:"application/json",
+      success:function(data){
+        for (var i = 0; i < data.length; i++) {
+            if(i == 3){
+                  $("#list").append("<h3>" +  data[i-1].id + " " + data[i-1].userName + "</h3>");
+            }
+         
+        }
+          alert("+");
+      },
+      error:function(error){
+        console.log(error);
+      }
+    });
+              
+         
+    });
+        
+        
+    </script>
+
+
+    
+    
+</body>
+</html>
